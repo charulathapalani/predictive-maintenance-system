@@ -1,0 +1,78 @@
+{
+  "model": "random_forest",
+  "trained_at": "2026-11-11T21:49:19",
+  "data": "synthetic (simulated) sensor windows",
+  "n_train": 1350,
+  "n_test": 450,
+  "health_accuracy": 0.9778,
+  "fault_accuracy": 0.9967,
+  "classification_report": {
+    "CRITICAL": {
+      "precision": 0.9932885906040269,
+      "recall": 0.9866666666666667,
+      "f1-score": 0.9899665551839465,
+      "support": 150.0
+    },
+    "HEALTHY": {
+      "precision": 1.0,
+      "recall": 0.9533333333333334,
+      "f1-score": 0.9761092150170648,
+      "support": 150.0
+    },
+    "WARNING": {
+      "precision": 0.9430379746835443,
+      "recall": 0.9933333333333333,
+      "f1-score": 0.9675324675324676,
+      "support": 150.0
+    },
+    "accuracy": 0.9777777777777777,
+    "macro avg": {
+      "precision": 0.9787755217625237,
+      "recall": 0.9777777777777777,
+      "f1-score": 0.9778694125778263,
+      "support": 450.0
+    },
+    "weighted avg": {
+      "precision": 0.9787755217625237,
+      "recall": 0.9777777777777777,
+      "f1-score": 0.9778694125778262,
+      "support": 450.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "HEALTHY",
+      "WARNING",
+      "CRITICAL"
+    ],
+    "matrix": [
+      [
+        143,
+        7,
+        0
+      ],
+      [
+        0,
+        149,
+        1
+      ],
+      [
+        0,
+        2,
+        148
+      ]
+    ]
+  },
+  "top_features": {
+    "temperature_rms": 0.0761,
+    "vibration_mean": 0.068,
+    "temperature_min": 0.065,
+    "vibration_min": 0.0646,
+    "temperature_mean": 0.0602,
+    "vibration_rms": 0.0573,
+    "vibration_max": 0.0511,
+    "vibration_peak": 0.0435,
+    "temperature_max": 0.0386,
+    "temperature_peak": 0.0364
+  }
+}
